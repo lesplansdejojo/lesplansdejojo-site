@@ -1,0 +1,96 @@
+@import "tailwindcss" source("../");
+
+/* Palette inspirée du logo néon : charbon, rose néon, or « Premium » */
+@theme {
+  --color-nuit: #1b1719;
+  --color-nuit-2: #241e21;
+  --color-nuit-3: #2f272b;
+  --color-ligne: #3d3237;
+  --color-neon: #ff4f9a;
+  --color-neon-doux: #ff8cbd;
+  --color-rose: #ffd6e6;
+  --color-creme: #fff4f8;
+  --color-brume: #b9a7ae;
+  --color-or: #ffc857;
+  --color-or-fonce: #3a2c0c;
+
+  --font-display: "Fredoka", ui-rounded, system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  background: var(--color-nuit);
+  color-scheme: dark;
+}
+
+body {
+  @apply m-0 bg-nuit text-creme font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+code {
+  font-family: var(--font-display);
+}
+
+.neon {
+  color: var(--color-rose);
+  text-shadow:
+    0 0 4px #fff,
+    0 0 12px var(--color-neon),
+    0 0 28px var(--color-neon),
+    0 0 48px rgb(255 79 154 / 0.6);
+}
+
+.neon-box {
+  box-shadow:
+    0 0 0 1px rgb(255 79 154 / 0.6),
+    0 0 18px rgb(255 79 154 / 0.35),
+    inset 0 0 18px rgb(255 79 154 / 0.12);
+}
+
+.grain {
+  background-image:
+    radial-gradient(60rem 30rem at 85% -10%, rgb(255 79 154 / 0.18), transparent 60%),
+    radial-gradient(40rem 24rem at -10% 20%, rgb(255 200 87 / 0.07), transparent 60%);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.55; }
+}
+.flicker {
+  animation: flicker 4s infinite;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-neon);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
