@@ -13,8 +13,8 @@ export type Tier = 'free' | 'premium'
 
 export type Category =
   | 'Activités'
-  | 'Restos'
-  | 'Plein air'
+  | 'Hébergements'
+  | 'Gratuit'
   | 'Voyage'
   | 'Boutiques'
   | 'Bien-être'
@@ -55,8 +55,8 @@ export type Plan = {
 
 export const CATEGORIES: Category[] = [
   'Activités',
-  'Restos',
-  'Plein air',
+  'Hébergements',
+  'Gratuit',
   'Voyage',
   'Boutiques',
   'Bien-être',
@@ -64,26 +64,25 @@ export const CATEGORIES: Category[] = [
 export const DEALS: Deal[] = [
   { id: 'd1', partner: 'Ballet Hop NDG', title: 'Cours de ballet adultes et enfants', category: 'Activités', area: 'NDG', discount: '-10 %', code: 'JOJO10', tier: 'free', isNew: true },
 
-  { id: 'd2', partner: 'Boutique Le Cargo', title: 'Boutique', category: 'Boutiques', area: 'En ligne', discount: '-10 %', code: 'JOJO10', tier: 'free' },
+  { id: 'd2', partner: 'Boutique Le Cargo', title: 'Boutique', category: 'Activités', area: 'En ligne', discount: '-10 %', code: 'JOJO10', tier: 'free' },
 
   { id: 'd3', partner: 'Nidotruche', title: 'Bon plan', category: 'Activités', area: 'Saint-Eustache', discount: 'Code promo', code: 'JOJO10', tier: 'free' },
 
-  { id: 'd4', partner: 'Leo Autopartage', title: 'Autopartage', category: 'Voyage', area: 'Montréal', discount: '10 $', code: 'A5BJGBDY', tier: 'free' },
+  { id: 'd4', partner: 'Leo Autopartage', title: 'Autopartage', category: 'Activités', area: 'Montréal', discount: '10 $', code: 'A5BJGBDY', tier: 'free' },
 
   { id: 'd5', partner: 'Fever', title: 'Activités et sorties', category: 'Activités', area: 'En ligne', discount: '11 $ de rabais', code: 'Voir message Instagram/Facebook', tier: 'free' },
 
   { id: 'd6', partner: 'ATTITUDE.ca', title: 'Produits soins et beauté', category: 'Bien-être', area: 'En ligne', discount: '-20 %', code: '20JCAMART', tier: 'free' },
 
-  { id: 'd7', partner: 'BrunoVélo & Fatbike', title: 'Vélo et fatbike', category: 'Plein air', area: 'En ligne', discount: 'Code promo', code: 'JOJO10', tier: 'free' },
+  { id: 'd7', partner: 'BrunoVélo & Fatbike', title: 'Vélo et fatbike', category: 'Activités', area: 'En ligne', discount: 'Code promo', code: 'JOJO10', tier: 'free' },
 
-  { id: 'd8', partner: 'MTArégion', title: 'Pass MTArégion', category: 'Voyage', area: 'Québec', discount: '-20 % / 10 $', code: 'JOJO20 / P676482N', tier: 'free' },
+  { id: 'd8', partner: 'MTArégion', title: 'Pass MTArégion', category: 'Activités', area: 'Québec', discount: '-20 % / 10 $', code: 'JOJO20 / P676482N', tier: 'free' },
 
   { id: 'd9', partner: 'Rakuten', title: 'Bon d’achat', category: 'Boutiques', area: 'En ligne', discount: '30 $', code: 'JOJO30', tier: 'free', url: 'https://www.rakuten.ca/r/JOJO30?src=IOS' },
 
-  { id: 'd10', partner: 'Wealthsimple', title: 'Offre de bienvenue', category: 'Voyage', area: 'En ligne', discount: '25 $', code: 'JRO5YW', tier: 'free' },
+  { id: 'd10', partner: 'Wealthsimple', title: 'Boutiques', category: 'Voyage', area: 'En ligne', discount: '25 $', code: 'JRO5YW', tier: 'free' },
 
   { id: 'd11', partner: '87plus', title: 'Café colombien', category: 'Boutiques', area: 'En ligne', discount: '-5 %', code: 'JOJO5', tier: 'free' },
-  { id: 'd12', partner: 'Test GitHub', title: 'Test de déploiement', category: 'Activités', area: 'Montréal', discount: 'Test', code: 'TEST', tier: 'free' },
 ]
 
 
@@ -100,7 +99,7 @@ export const PLANS: Plan[] = [
   {
     id: 'premium',
     name: 'Premium',
-    price: 5.99,
+    price: 2.99,
     period: 'par mois',
     tagline: 'Les rabais exclusifs et les guides de Jojo, sans limite.',
     perks: [
