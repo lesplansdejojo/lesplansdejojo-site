@@ -61,33 +61,30 @@ export const CATEGORIES: Category[] = [
   'Boutiques',
   'Bien-être',
 ]
-
 export const DEALS: Deal[] = [
-  // --- Gratuits (partenaires commissionnés) ---
-  { id: 'd1', partner: 'Resto familial (exemple)', title: 'Brunch du week-end', category: 'Restos', area: 'Plateau', discount: '-15 %', code: 'JOJO15', tier: 'free', isNew: true },
-  { id: 'd2', partner: "Parc d'aventure (exemple)", title: 'Hébertisme aérien', category: 'Plein air', area: 'Laurentides', discount: '-10 $', code: 'JOJO10', tier: 'free', expires: '31 oct.' },
-  { id: 'd3', partner: 'Boutique enfants (exemple)', title: 'Vêtements et jouets', category: 'Boutiques', area: 'En ligne', discount: '-20 %', code: 'JOJOKIDS', tier: 'free' },
-  { id: 'd4', partner: 'Comparateur de vols (exemple)', title: 'Vols au départ de YUL', category: 'Voyage', area: 'Lien partenaire', discount: 'Meilleurs prix', code: 'LIEN', tier: 'free', url: '#' },
-  { id: 'd5', partner: 'Équipement rando (exemple)', title: 'Tout le plein air', category: 'Plein air', area: 'En ligne', discount: '-12 %', code: 'JOJOHIKE', tier: 'free' },
-  { id: 'd6', partner: 'Escape game (exemple)', title: 'Salles 2 à 6 joueurs', category: 'Activités', area: 'Mile End', discount: '-15 %', code: 'JOJOESCAPE', tier: 'free', isNew: true },
+  { id: 'd1', partner: 'Ballet Hop NDG', title: 'Cours de ballet adultes et enfants', category: 'Activités', area: 'NDG', discount: '-10 %', code: 'JOJO10', tier: 'free', isNew: true },
 
-  // --- Premium (rabais exclusifs, non commissionnés) ---
-  { id: 'd7', partner: 'Musée interactif (exemple)', title: 'Entrée famille', category: 'Activités', area: 'Centre-ville', discount: '2 pour 1', code: 'JOJO2X1', tier: 'premium', isNew: true },
-  { id: 'd8', partner: 'Café-jeux (exemple)', title: 'Soirée jeux de société', category: 'Restos', area: 'NDG', discount: '-25 %', code: 'JOJOCAFE', tier: 'premium' },
-  { id: 'd9', partner: 'Trampoline park (exemple)', title: 'Saut libre 90 min', category: 'Activités', area: 'Laval', discount: '-30 %', code: 'JOJOJUMP', tier: 'premium', expires: '15 nov.' },
-  { id: 'd10', partner: 'Ferme pédagogique (exemple)', title: 'Autocueillette et animaux', category: 'Plein air', area: 'Montérégie', discount: '-5 $', code: 'JOJOFERME', tier: 'premium' },
-  { id: 'd11', partner: 'Boulangerie brunch (exemple)', title: 'Viennoiseries et café', category: 'Restos', area: 'Rosemont', discount: '-20 %', code: 'JOJOBRUNCH', tier: 'premium' },
-  { id: 'd12', partner: 'Spa nordique (exemple)', title: 'Accès thermal', category: 'Bien-être', area: 'Estrie', discount: '-18 %', code: 'JOJOSPA', tier: 'premium' },
-  { id: 'd13', partner: 'Ciné-club enfants (exemple)', title: 'Séances du dimanche', category: 'Activités', area: 'Villeray', discount: '-3 $', code: 'JOJOCINE', tier: 'premium' },
-  { id: 'd14', partner: 'Auberge boutique (exemple)', title: 'Nuitée en Charlevoix', category: 'Voyage', area: 'Charlevoix', discount: '-20 %', code: 'JOJOGETAWAY', tier: 'premium', isNew: true },
+  { id: 'd2', partner: 'Boutique Le Cargo', title: 'Boutique', category: 'Boutiques', area: 'En ligne', discount: '-10 %', code: 'JOJO10', tier: 'free' },
+
+  { id: 'd3', partner: 'Nidotruche', title: 'Bon plan', category: 'Activités', area: 'Saint-Eustache', discount: 'Code promo', code: 'JOJO10', tier: 'free' },
+
+  { id: 'd4', partner: 'Leo Autopartage', title: 'Autopartage', category: 'Voyage', area: 'Montréal', discount: '10 $', code: 'A5BJGBDY', tier: 'free' },
+
+  { id: 'd5', partner: 'Fever', title: 'Activités et sorties', category: 'Activités', area: 'En ligne', discount: '11 $ de rabais', code: 'Voir message Instagram/Facebook', tier: 'free' },
+
+  { id: 'd6', partner: 'ATTITUDE.ca', title: 'Produits soins et beauté', category: 'Bien-être', area: 'En ligne', discount: '-20 %', code: '20JCAMART', tier: 'free' },
+
+  { id: 'd7', partner: 'BrunoVélo & Fatbike', title: 'Vélo et fatbike', category: 'Plein air', area: 'En ligne', discount: 'Code promo', code: 'JOJO10', tier: 'free' },
+
+  { id: 'd8', partner: 'MTArégion', title: 'Pass MTArégion', category: 'Voyage', area: 'Québec', discount: '-20 % / 10 $', code: 'JOJO20 / P676482N', tier: 'free' },
+
+  { id: 'd9', partner: 'Rakuten', title: 'Bon d’achat', category: 'Boutiques', area: 'En ligne', discount: '30 $', code: 'JOJO30', tier: 'free', url: 'https://www.rakuten.ca/r/JOJO30?src=IOS' },
+
+  { id: 'd10', partner: 'Wealthsimple', title: 'Offre de bienvenue', category: 'Voyage', area: 'En ligne', discount: '25 $', code: 'JRO5YW', tier: 'free' },
+
+  { id: 'd11', partner: '87plus', title: 'Café colombien', category: 'Boutiques', area: 'En ligne', discount: '-5 %', code: 'JOJO5', tier: 'free' },
 ]
 
-export const GUIDES: Guide[] = [
-  { id: 'g1', title: '100 activités gratuites à Montréal', subtitle: 'Parcs, festivals, musées gratuits et sorties à 0 $', cover: '/img/guide-gratuit.png', pages: 42, kind: 'Activités', price: 9.99, premiumPrice: 0 },
-  { id: 'g2', title: "L'hiver en famille", subtitle: 'Patinoires, glissades, cabanes à sucre et sorties au chaud', cover: '/img/guide-hiver.png', pages: 36, kind: 'Activités', price: 9.99, premiumPrice: 0 },
-  { id: 'g3', title: 'Road trip en Charlevoix', subtitle: 'Itinéraire de 4 jours, adresses et budget détaillé', cover: '/img/guide-roadtrip.png', pages: 28, kind: 'Voyage', price: 14.99, premiumPrice: 4.99 },
-  { id: 'g4', title: 'Québec en 48 heures', subtitle: 'Le Vieux-Québec, les bonnes tables et les incontournables', cover: '/img/guide-quebec.png', pages: 24, kind: 'Voyage', price: 12.99, premiumPrice: 2.99 },
-]
 
 // Prix à titre d'exemple — à ajuster
 export const PLANS: Plan[] = [
