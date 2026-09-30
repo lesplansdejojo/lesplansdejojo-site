@@ -83,7 +83,7 @@ export const DEALS: Deal[] = [
   { id: 'd10', partner: 'Wealthsimple', title: 'Offre de bienvenue', category: 'Voyage', area: 'En ligne', discount: '25 $', code: 'JRO5YW', tier: 'free' },
 
   { id: 'd11', partner: '87plus', title: 'Café colombien', category: 'Boutiques', area: 'En ligne', discount: '-5 %', code: 'JOJO5', tier: 'free' },
-  { id: 'd12', partner: 'Test Netlify', title: 'Test de déploiement', category: 'Activités', area: 'Montréal', discount: 'Test', code: 'TEST', tier: 'free' },
+  { id: 'd12', partner: 'Test GitHub', title: 'Test de déploiement', category: 'Activités', area: 'Montréal', discount: 'Test', code: 'TEST', tier: 'free' },
 ]
 
 
